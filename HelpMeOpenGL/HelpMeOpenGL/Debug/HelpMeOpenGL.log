@@ -1,12 +1,8 @@
-﻿  BACKGROUND.cpp
-  CHARACTER.cpp
-  EFFECT.cpp
-  Main.cpp
+﻿  Main.cpp
 d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(21): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(59): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(85): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
-d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(61): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(87): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
-d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(133): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  코드를 생성하고 있습니다...
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(155): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   HelpMeOpenGL.vcxproj -> D:\FinalProjectOpenGL\HelpMeOpenGL\Debug\HelpMeOpenGL.exe

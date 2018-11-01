@@ -41,7 +41,7 @@ void main(int argc, char *argv[])
 // 윈도우 출력 함수
 GLvoid drawScene(GLvoid)
 {
-	glClearColor(1.0f, 0.0f, 0.0f, 1.0f);	// 바탕색을 'blue' 로 지정 
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	// 바탕색을 'blue' 로 지정 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// 설정된 색으로 전체를 칠하기 
 	//출력 전후
 	glEnable(GL_DEPTH_TEST);
@@ -49,21 +49,43 @@ GLvoid drawScene(GLvoid)
 	
 
 	glPushMatrix(); {
-		gluLookAt(2, 2, 10, 2, 0, 0, 0, 1, 0);
-		
+		gluLookAt(2, 0, 10, 2, 0, 0, 0, 1, 0);
+		glTranslated(0, 0, -350);
+		glPushMatrix();
 		glRotated(Global_Rotate, 0, 1, 0);
+		glRotated(Global_Rotate/2, 1, 0, 0);
 		glColor4ub(255, 255, 255, 255);
-		glutWireCube(100);
-
-		char string[64];
-		sprintf(string, "FPS %d",FPS);
-		printtext(10, 20, string);
-		sprintf(string, "Q : EXIT");
-		printtext(10, 35, string);
-
+		for (int i = 255; i > 3; i-=3) {
+			glColor4ub(255-i,i, 255-(i/2), 255);
+			glutWireCube(i);
+		}
+		glPopMatrix();
+		glPushMatrix();
+		glTranslated(-300, 0, 0);
+		glRotated(Global_Rotate, 0, 1, 0);
+		glRotated(Global_Rotate / 2, 1, 0, 0);
+		glColor4ub(255, 255, 255, 255);
+		for (int i = 255; i > 3; i -= 3) {
+			glColor4ub(i, 255 - i, 255 - (i / 2), 255);
+			glutWireCube(i);
+		}
+		glPopMatrix();
+		glPushMatrix();
+		glTranslated(300, 0, 0);
+		glRotated(Global_Rotate, 0, 1, 0);
+		glRotated(Global_Rotate / 2, 1, 0, 0);
+		glColor4ub(255, 255, 255, 255);
+		for (int i = 255; i > 3; i -= 3) {
+			glColor4ub(i, 255 - i, 255 - (i / 2), 255);
+			glutWireCube(i);
+		}
+		glPopMatrix();
 	}glPopMatrix();
-	//glutBitmapCharacter(NULL,_T("Q누르면 종료"));
-
+	char string[64];
+	sprintf(string, "FPS %d FPSCOUNT %d", FPS, FPSCOUNT);
+	printtext(10, 20, string);
+	sprintf(string, "Q : EXIT");
+	printtext(10, 35, string);
 
 
 
