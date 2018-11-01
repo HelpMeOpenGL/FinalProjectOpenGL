@@ -41,7 +41,7 @@ void main(int argc, char *argv[])
 // 윈도우 출력 함수
 GLvoid drawScene(GLvoid)
 {
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	// 바탕색을 'blue' 로 지정 
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	// 바탕색을 'black' 으로 지정 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// 설정된 색으로 전체를 칠하기 
 	//출력 전후
 	glEnable(GL_DEPTH_TEST);
