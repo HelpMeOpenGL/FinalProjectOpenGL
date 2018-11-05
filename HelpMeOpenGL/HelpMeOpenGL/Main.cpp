@@ -21,7 +21,7 @@ void main(int argc, char *argv[])
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);	// 디스플레이 모드 설정 
-	//glutInitWindowPosition(100, 100);	// 윈도우의 위치지정 
+	glutInitWindowPosition(100, 100);	// 윈도우의 위치지정 
 	glutInitWindowSize(1920, 1080);	// 윈도우의 크기 지정 
 	glutCreateWindow("NUM11");	// 윈도우 생성 (윈도우 이름) 
 	glutFullScreenToggle();
@@ -49,7 +49,7 @@ GLvoid drawScene(GLvoid)
 	
 
 	glPushMatrix(); {
-		gluLookAt(2, 0, 10, 2, 0, 0, 0, 1, 0);
+		gluLookAt(CameraPostion.x, CameraPostion.y, 1, 2, 0, 0,0,1, 0);
 		glTranslated(0, 0, -350);
 		glPushMatrix();
 		glRotated(Global_Rotate, 0, 1, 0);
@@ -57,26 +57,6 @@ GLvoid drawScene(GLvoid)
 		glColor4ub(255, 255, 255, 255);
 		for (int i = 255; i > 3; i-=3) {
 			glColor4ub(255-i,i, 255-(i/2), 255);
-			glutWireCube(i);
-		}
-		glPopMatrix();
-		glPushMatrix();
-		glTranslated(-300, 0, 0);
-		glRotated(Global_Rotate, 0, 1, 0);
-		glRotated(Global_Rotate / 2, 1, 0, 0);
-		glColor4ub(255, 255, 255, 255);
-		for (int i = 255; i > 3; i -= 3) {
-			glColor4ub(i, 255 - i, 255 - (i / 2), 255);
-			glutWireCube(i);
-		}
-		glPopMatrix();
-		glPushMatrix();
-		glTranslated(300, 0, 0);
-		glRotated(Global_Rotate, 0, 1, 0);
-		glRotated(Global_Rotate / 2, 1, 0, 0);
-		glColor4ub(255, 255, 255, 255);
-		for (int i = 255; i > 3; i -= 3) {
-			glColor4ub(i, 255 - i, 255 - (i / 2), 255);
 			glutWireCube(i);
 		}
 		glPopMatrix();
@@ -135,6 +115,18 @@ void Keyboard(unsigned char key, int x, int y) {
 	switch (key) {
 	case'q':
 		glutDestroyWindow(1);
+		break;
+	case 'a':
+		CameraPostion.x--;
+		break;
+	case 'd':
+		CameraPostion.x++;
+		break;
+	case 'w':
+		CameraPostion.y++;
+		break;
+	case 's':
+		CameraPostion.y--;
 		break;
 	}
 }
