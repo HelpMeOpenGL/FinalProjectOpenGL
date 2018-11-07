@@ -1,2 +1,0 @@
-/FinalProjectOpenGL/HelpMeOpenGL/Debug/
-/FinalProjectOpenGL/HelpMeOpenGL/HelpMeOpenGL/Debug/
