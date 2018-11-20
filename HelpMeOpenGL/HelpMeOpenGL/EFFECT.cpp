@@ -4,6 +4,7 @@
 #include <time.h>
 
 #include "EFFECT.h"
+#include "stdafx.h"
 
 
 EFFECT::EFFECT()

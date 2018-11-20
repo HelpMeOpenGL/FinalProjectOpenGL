@@ -1,11 +1,14 @@
 #include <GL/freeglut.h> 
 #include <iostream>
 #include <Windows.h>
+#include "Sound.h"
+#include "stdafx.h"
 #include "BACKGROUND.h"
 #include "CHARACTER.h"
 #include "EFFECT.h"
 #include "PublicDATA.h"
 
+CSound snd;
 using namespace std;
 
 GLvoid drawScene(GLvoid);
@@ -127,6 +130,13 @@ void Keyboard(unsigned char key, int x, int y) {
 		break;
 	case 's':
 		CameraPostion.y--;
+		break;
+	case 'b':
+		snd.pSound[0]->release();
+		snd.Add_sound();
+		snd.Play(0);
+		break;
+	case 'B':
 		break;
 	}
 }

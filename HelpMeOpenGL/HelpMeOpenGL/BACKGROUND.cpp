@@ -1,4 +1,6 @@
 #include "BACKGROUND.h"
+#include "stdafx.h"
+
 #include <GL/freeglut.h> 
 #include <iostream>
 #include <math.h>
