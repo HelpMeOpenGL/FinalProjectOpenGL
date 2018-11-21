@@ -1,4 +1,18 @@
-#include <GL/freeglut.h> 
+#include <GL/freeglut.h>
+
+#ifdef _DEBUG
+#ifdef _WIN32
+#pragma comment(lib, "glew32.lib")
+#elif _WIN64
+#pragma comment(lib, "glew32.lib")
+#endif
+#else
+#ifdef _WIN64
+#pragma comment(lib, "glew32.lib")
+#elif _WIN32N
+#pragma comment(lib, "glew32.lib")
+#endif
+#endif
 #include <iostream>
 #include <Windows.h>
 #include "Sound.h"
