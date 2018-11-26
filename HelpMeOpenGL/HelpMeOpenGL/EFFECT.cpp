@@ -7,11 +7,31 @@
 #include "stdafx.h"
 
 
-EFFECT::EFFECT()
-{
+EFFECT::EFFECT(){
+
 }
 
 
-EFFECT::~EFFECT()
-{
+EFFECT::~EFFECT(){
+
+}
+
+void EFFECT::draw(){
+
+}
+
+void EFFECT::update(){
+
+}
+
+void EFFECT::init(){
+
+}
+
+void EFFECT::reset(){
+
+}
+
+void EFFECT::messege(unsigned char key){
+
 }

@@ -14,3 +14,25 @@ BACKGROUND::BACKGROUND() {
 
 }
 
+void BACKGROUND::draw()
+{
+}
+
+void BACKGROUND::update()
+{
+}
+
+void BACKGROUND::init()
+{
+}
+
+void BACKGROUND::reset()
+{
+}
+
+void BACKGROUND::messege(unsigned char key)
+{
+
+
+}
+

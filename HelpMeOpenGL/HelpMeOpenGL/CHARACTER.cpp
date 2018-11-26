@@ -8,3 +8,27 @@ using namespace std;
 CHARACTER::CHARACTER() {
 
 }
+
+CHARACTER::~CHARACTER(){
+
+}
+
+void CHARACTER::draw(){
+
+}
+
+void CHARACTER::update(){
+
+}
+
+void CHARACTER::init(){
+
+}
+
+void CHARACTER::reset(){
+
+}
+
+void CHARACTER::messege(unsigned char key){
+
+}

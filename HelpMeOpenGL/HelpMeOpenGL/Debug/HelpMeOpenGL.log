@@ -1,1 +1,7 @@
-﻿  HelpMeOpenGL.vcxproj -> D:\FinalProjectOpenGL\HelpMeOpenGL\Debug\HelpMeOpenGL.exe
+﻿Main.obj : error LNK2019: "public: enum FMOD_RESULT __stdcall FMOD::Sound::release(void)" (?release@Sound@FMOD@@QAG?AW4FMOD_RESULT@@XZ) 외부 기호(참조 위치: "void __cdecl Keyboard(unsigned char,int,int)" (?Keyboard@@YAXEHH@Z) 함수)에서 확인하지 못했습니다.
+Main.obj : error LNK2019: "public: __thiscall CSound::CSound(void)" (??0CSound@@QAE@XZ) 외부 기호(참조 위치: "void __cdecl `dynamic initializer for 'snd''(void)" (??__Esnd@@YAXXZ) 함수)에서 확인하지 못했습니다.
+Main.obj : error LNK2019: "public: virtual __thiscall CSound::~CSound(void)" (??1CSound@@UAE@XZ) 외부 기호(참조 위치: "void __cdecl `dynamic atexit destructor for 'snd''(void)" (??__Fsnd@@YAXXZ) 함수)에서 확인하지 못했습니다.
+Main.obj : error LNK2019: "public: void __thiscall CSound::Add_sound(void)" (?Add_sound@CSound@@QAEXXZ) 외부 기호(참조 위치: "void __cdecl Keyboard(unsigned char,int,int)" (?Keyboard@@YAXEHH@Z) 함수)에서 확인하지 못했습니다.
+Main.obj : error LNK2019: "public: void __thiscall CSound::Play(int)" (?Play@CSound@@QAEXH@Z) 외부 기호(참조 위치: "void __cdecl Keyboard(unsigned char,int,int)" (?Keyboard@@YAXEHH@Z) 함수)에서 확인하지 못했습니다.
+FMOD\lib\fmod64_vc.lib : warning LNK4272: 'x64' 라이브러리 컴퓨터 종류가 'x86' 대상 컴퓨터 종류와 충돌합니다.
+F:\FinalProjectOpenGL\HelpMeOpenGL\Debug\HelpMeOpenGL.exe : fatal error LNK1120: 5개의 확인할 수 없는 외부 참조입니다.

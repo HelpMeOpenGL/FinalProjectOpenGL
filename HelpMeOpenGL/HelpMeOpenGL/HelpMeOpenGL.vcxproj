@@ -143,12 +143,14 @@
     <ClCompile Include="CHARACTER.cpp" />
     <ClCompile Include="EFFECT.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BACKGROUND.h" />
     <ClInclude Include="CHARACTER.h" />
     <ClInclude Include="EFFECT.h" />
     <ClInclude Include="PublicDATA.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
