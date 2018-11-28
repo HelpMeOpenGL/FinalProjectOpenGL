@@ -1,10 +1,14 @@
 #pragma once
-#include "FMOD\include\fmod.hpp"
+#include <fmod.hpp>
 
 //사운드 채널 갯수 정의
 #define SOUND_NUM 10
 
-#pragma comment(lib, "FMOD/lib/fmod64_vc.lib")
+#ifdef _WIN64
+#pragma comment(lib, "fmodL64_vc.lib")
+#elif _WIN32
+#pragma comment(lib, "fmodL_vc.lib")
+#endif
 
 using namespace FMOD;
 

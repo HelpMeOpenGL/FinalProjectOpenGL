@@ -1,5 +1,5 @@
-#include "BACKGROUND.h"
 #include "stdafx.h"
+#include "BACKGROUND.h"
 
 #include <GL/freeglut.h> 
 #include <iostream>

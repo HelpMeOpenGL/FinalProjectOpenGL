@@ -1,8 +1,8 @@
+#include "stdafx.h"
 #include <GL/freeglut.h> 
 #include <iostream>
 #include <Windows.h>
 #include "Sound.h"
-#include "stdafx.h"
 #include "BACKGROUND.h"
 #include "CHARACTER.h"
 #include "EFFECT.h"
@@ -20,7 +20,7 @@ void PMotion(int x, int y);
 void Keyboard(unsigned char key, int x, int y);
 void printtext(int x, int y, string String);
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);	// 디스플레이 모드 설정 
@@ -39,6 +39,7 @@ void main(int argc, char *argv[])
 	
 
 	glutMainLoop();
+	return 0;
 }
 
 // 윈도우 출력 함수
@@ -64,10 +65,11 @@ GLvoid drawScene(GLvoid)
 		}
 		glPopMatrix();
 	}glPopMatrix();
-	char string[64];
-	sprintf(string, "FPS %d FPSCOUNT %d", FPS, FPSCOUNT);
+	const size_t sz = 64;
+	char string[sz];
+	sprintf_s(string, sz, "FPS %d FPSCOUNT %d", FPS, FPSCOUNT);
 	printtext(10, 20, string);
-	sprintf(string, "Q : EXIT");
+	sprintf_s(string, sz, "Q : EXIT");
 	printtext(10, 35, string);
 
 
@@ -154,7 +156,7 @@ void printtext(int x, int y, string String)
 	glPushAttrib(GL_DEPTH_TEST);
 	glDisable(GL_DEPTH_TEST);
 	glRasterPos2i(x, y);
-	for (int i = 0; i < String.size(); i++)
+	for (size_t i = 0; i < String.size(); i++)
 	{
 		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, String[i]);
 	}
