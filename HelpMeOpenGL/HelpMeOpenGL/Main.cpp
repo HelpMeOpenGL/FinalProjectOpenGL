@@ -1,7 +1,5 @@
 #include "stdafx.h"
-#include <GL/freeglut.h> 
-#include <iostream>
-#include <Windows.h>
+
 #include "Sound.h"
 #include "BACKGROUND.h"
 #include "CHARACTER.h"
