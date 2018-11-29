@@ -1,0 +1,20 @@
+﻿  BACKGROUND.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\background.cpp(20): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  CHARACTER.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\character.cpp(18): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  EFFECT.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\effect.cpp(19): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  Main.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(61): warning C4244: '인수': 'int'에서 'GLubyte'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'state': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'button': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(109): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(109): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(113): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(113): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(117): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(117): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+  코드를 생성하고 있습니다...
+  HelpMeOpenGL.vcxproj -> D:\FinalProjectOpenGL\HelpMeOpenGL\x64\Debug\HelpMeOpenGL.exe
