@@ -1,2 +1,26 @@
-﻿  Main.cpp
+﻿  stdafx.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\gl\freeglut_std.h(623): warning C4505: 'glutInit_ATEXIT_HACK': 참조되지 않은 지역 함수를 제거했습니다.
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\gl\freeglut_std.h(625): warning C4505: 'glutCreateWindow_ATEXIT_HACK': 참조되지 않은 지역 함수를 제거했습니다.
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\gl\freeglut_std.h(627): warning C4505: 'glutCreateMenu_ATEXIT_HACK': 참조되지 않은 지역 함수를 제거했습니다.
+  BACKGROUND.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\background.cpp(20): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  CHARACTER.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\character.cpp(18): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  EFFECT.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\effect.cpp(19): warning C4100: 'key': 참조되지 않은 정식 매개 변수입니다.
+  Main.cpp
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(61): warning C4244: '인수': 'int'에서 'GLubyte'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'state': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(105): warning C4100: 'button': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(109): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(109): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(113): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(113): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(117): warning C4100: 'y': 참조되지 않은 정식 매개 변수입니다.
+d:\finalprojectopengl\helpmeopengl\helpmeopengl\main.cpp(117): warning C4100: 'x': 참조되지 않은 정식 매개 변수입니다.
+  Sound.cpp
+  코드를 생성하고 있습니다...
+  LINK : D:\FinalProjectOpenGL\HelpMeOpenGL\Debug\HelpMeOpenGL.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   HelpMeOpenGL.vcxproj -> D:\FinalProjectOpenGL\HelpMeOpenGL\Debug\HelpMeOpenGL.exe
